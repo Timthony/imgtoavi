@@ -11,7 +11,7 @@ using namespace cv;
 
 int main()
 {
-    Mat src=imread("/Users/arcstone_mems_108/Desktop/result/自动抽核/次靠前/2/1.jpg",1);
+    Mat src=imread("/Users/arcstone_mems_108/Desktop/result/自动抽核/次靠前/3/1.jpg",1);
     if(!src.data)
     {
         cout<<"buxinga!"<<endl;
@@ -22,7 +22,7 @@ int main()
     int frameWidth = src.cols;
     int frameHeight = src.rows;
 
-    writer = VideoWriter("/Users/arcstone_mems_108/Desktop/result/自动抽核/次靠前/2/test_1_2.avi",CV_FOURCC('M','J','P','G'), fps,
+    writer = VideoWriter("/Users/arcstone_mems_108/Desktop/result/自动抽核/次靠前/3/test_1_3.avi",CV_FOURCC('M','J','P','G'), fps,
                          Size(frameWidth, frameHeight), isColor);
 
     cout << "info:" << endl
@@ -33,7 +33,7 @@ int main()
 
     for (int i = 1; i < 1000; i++)
     {
-        sprintf(image_name, "/Users/arcstone_mems_108/Desktop/result/自动抽核/次靠前/2/%d.jpg", i);
+        sprintf(image_name, "/Users/arcstone_mems_108/Desktop/result/自动抽核/次靠前/3/%d.jpg", i);
         src = imread(image_name, 1);
         if (src.empty())
         {
