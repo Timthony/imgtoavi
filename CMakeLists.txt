@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+project(imgtoavi)
+find_package(OpenCV)
+set(CMAKE_CXX_STANDARD 11)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(imgtoavi main.cpp)
+target_link_libraries(imgtoavi ${OpenCV_LIBS})
